@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: 'work sans', Arial, Helvetica, sans-serif;
+            /*combinação de fontes*/
+            /*a familia de fonte deve permitir as seguintes configurações:*/
+            font-size: 1em;
+            /*Medidas absolutas:
+            cm, mm, in, px (16 é o padrão), pt, pc
+            Medidas relativas:
+            em (1 é o padrão), ex, rem,vw, vh, %*/
+            font-weight: 400;
+            /* lighter, normal, bold e bolder */
+            /*"weight (peso)", "width (largura)", "height (altura)"*/
+            font-style: italic;
+            text-decoration: underline;
+            /*sublinhado*/
+        }
+        h1 {
+            /*font-family: 'work sans', sans-serif;
+            font-size: 1em;
+            font-weight: 400;
+            font-style: italic;
+
+            SHORTHAND FONT:
+            - font-style -> font-weidth->  font-size -> font-family*/
+            font: italic bolder 3em 'work sans', sans serif;
+        }
+        h2 {
+            font: bold 2em 'work sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis recusandae iusto voluptas cumque. Suscipit porro laudantium dolorum fugiat corporis eos esse sunt cum est assumenda sit, similique quas voluptate impedit!</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime error eveniet corrupti porro, minus earum molestias culpa quia officiis molestiae pariatur cupiditate quis vitae quas dolore? Magnam accusantium nihil ducimus!</p>
+</body>
+</html>

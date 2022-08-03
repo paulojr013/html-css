@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /*box-level*/
+            background-color: rgb(255, 0, 0);
+
+            height: 300px;
+            width: 300px;
+
+            /*SHORTHAND's:*/
+           
+            border: 10px solid rgb(0, 46, 252);
+
+            padding: 10px;
+                        
+            margin: 20px auto 40px;
+                        
+            outline: 10px dashed yellow;
+        }
+        a { /*inline-level*/
+            display: block;
+            border: 5px solid rgb(9, 255, 0);
+            padding: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>    
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="0">links são exemplos de caixas inline-level.</a>Também é possível alterar o estado das box através do elemento 'display' fazendo, por exemplo um box-level se tornar uma inline-level e vice-versa. Vamos ver como tudo isso funciona. </p>
+</body>
+</html>

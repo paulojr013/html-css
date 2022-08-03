@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 730px)" srcset="ex11-imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1030px)" srcset="ex11-imagens/media.png" type="image/png">
+        <img src="ex11-imagens/grande.png" alt="imagem grande">
+    </picture>
+    <hr>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <!--primeira forma de fazer-->
+    <audio src="ex11-audio/takeoff-(sting).mp3" controls></audio> 
+    <!--segunda forma de fazer-->
+    <audio preload="metadata" controls loop>
+        <source src="ex11-audio/break-your-lock-and-key.mp3" type="audio/mpeg">
+        <!--Caso o navegador não seja compativel com mp3, deve se adicionar outros formatos de audio em complemento-->
+        <source src="ex11-audio/break-your-lock-and-key.ogg" type="audio/ogg">
+        <source src="ex11-audio/break-your-lock-and-key.wav" type="audio/wav">
+        <!--Se nenhum for aceito insere a seguinte mensagem-->
+        <p>Infelizmente seu navegador não consegue reproduzir aúdio. Clique <a href="ex11-audio" download="break-your-lock-and-key.mp3" type="audio/mpeg">aqui</a> para baixar o arquivo MP3.</p>
+    </audio>
+</body>
+</html>

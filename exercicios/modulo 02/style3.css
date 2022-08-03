@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+div {
+    display: inline-table;
+    border: 2px solid rgba(29, 24, 24, 0.685);
+    background-color: rgb(63, 157, 180);
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+}
+.d1:hover {
+    color: blueviolet;
+    background-color: gold;
+}
+.d2:hover {
+    color: rgb(192, 89, 5);
+    background-color: rgb(16, 206, 149);
+}
+.d2 > p {
+    display: none;
+}
+.d2:hover > p {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    display: block;
+}
+.d3:hover {
+    color: rgb(224, 10, 10);
+    background-color: rgb(43, 255, 0);
+}
