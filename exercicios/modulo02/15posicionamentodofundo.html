@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento do Fundo</title>
+    <style>
+        body {
+            border: 1px dashed black;
+            height: 97vh;
+            background-image: url(imagens14/wallpaper002.jpg);
+            background-repeat: no-repeat; /*ou repeat-y ou repeat-x*/
+            background-size: ;
+            background-position: center center;
+            }
+            .bloco {
+                height: 190px;
+                border: 2px solid rgb(255, 255, 255);
+                border-radius: 20px;
+                margin: 5px;
+                background-image: url(imagens14/wallpaper003.jpg)
+            }
+            #b1 {
+                background-position: left top;
+            }
+            #b2 {
+                background-position: center center;
+            }
+            #b3 {
+                background-position: right bottom;
+            }
+    </style>
+</head>
+<body>
+    <div class="bloco" id="b1"></div>
+    <div class="bloco" id="b2"></div>
+    <div class="bloco" id="b3"></div>
+</body>
+</html>
