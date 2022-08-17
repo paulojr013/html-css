@@ -13,7 +13,7 @@
     margin: 0px;
 }
 html, body {    
-    min-width: 100%;
+    min-height: 100vh;
 }
 header {
     background-color: black;
@@ -22,8 +22,9 @@ header {
     padding: 50px 0px;
 }
 h1 {
-    font-size: 7em;
+    font-size: 8em;
     font-family: 'Passion One', cursive;
+    font-variant: small-caps;
 }
 #joaninha {
     background-image: url(imagens/background001.jpg);   
@@ -33,28 +34,31 @@ h1 {
     padding-top: 1px;
 }
 div {    
-    padding: 60px 30px 60px 30px;
+    padding: 10vh 30px;
 }
-.divbr {
+.divbr, .divbr > p {
     background-color: white;
+    color: black;
 }
-.divpt {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    width: 520px;
+.divpt {    
     margin: 60px 30px;
 }
-p.main {
+section p {
+    display: inline-block;    
+    color: white;
     text-align: left;
     font-size: 2.8em;
     font-family: 'Sriracha';
     line-height: 2em;
+    background-color: rgba(0, 0, 0, 0.5);
 }
-p.hefo > a {
+a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
 }
 footer {
     text-align: center;
