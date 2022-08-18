@@ -36,12 +36,14 @@ h1 {
 div {    
     padding: 10vh 30px;
 }
-.divbr, .divbr > p {
+.divbr {
     background-color: white;
     color: black;
+    margin-bottom: 0px;
 }
-.divpt {    
-    margin: 60px 30px;
+.divbr > p {
+    background-color: white;
+    color: black;
 }
 section p {
     display: inline-block;    
@@ -51,6 +53,7 @@ section p {
     font-family: 'Sriracha';
     line-height: 2em;
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
 }
 a {
     color: white;
