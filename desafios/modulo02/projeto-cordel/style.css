@@ -22,7 +22,7 @@ header {
     padding: 50px 0px;
 }
 h1 {
-    font-size: 8em;
+    font-size: 20.5vh;
     font-family: 'Passion One', cursive;
     font-variant: small-caps;
 }
@@ -38,6 +38,7 @@ section {
 .pt {
     margin: 15vh 0px 5px ;
     padding: 10vh 2.3vw;
+    box-shadow: inset 0px 1px 11px 6px rgb(0 0 0 / 32%);
 }
 .sectionbr > p {
     background-color: white;
@@ -57,6 +58,7 @@ section {
     line-height: 2em;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
+    text-shadow: 1px 1px 1px black;
 }
 a {
     color: white;
