@@ -26,30 +26,33 @@ h1 {
     font-family: 'Passion One', cursive;
     font-variant: small-caps;
 }
-#joaninha {
-    background-image: url(imagens/background001.jpg);   
+section {
+    padding: 7vh 2.3vw;
 }
-#livro {
-    background-image: url(imagens/background002.jpg);    
-    padding-top: 1px;
+.joaninha {
+    background-image: url(imagens/background001.jpg);
 }
-div {    
-    padding: 10vh 30px;
+.livro {
+    background-image: url(imagens/background002.jpg); 
 }
-.divbr {
+.pt {
+    margin: 15vh 0px 5px ;
+    padding: 10vh 2.3vw;
+}
+.sectionbr > p {
     background-color: white;
     color: black;
-    margin-bottom: 0px;
+    text-align: left;
+    font-size: 7.1vh;
+    font-family: 'Sriracha';
+    line-height: 2em;
+    padding: 5px;
 }
-.divbr > p {
-    background-color: white;
-    color: black;
-}
-section p {
+.pt > p {
     display: inline-block;    
     color: white;
     text-align: left;
-    font-size: 2.8em;
+    font-size: 7.1vh;
     font-family: 'Sriracha';
     line-height: 2em;
     background-color: rgba(0, 0, 0, 0.5);
@@ -68,4 +71,5 @@ footer {
     background-color: rgb(0, 0, 0);
     color: white;
     padding: 10px;
+    margin-top: 15vh;
 }
