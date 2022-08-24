@@ -11,11 +11,16 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table {
-            width: 500px;
+            width: 400px;
             margin: auto;
             border-collapse: collapse;
         }        
-        td, th {
+        caption {
+            background-color: lightgray;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        td, th, caption {
             border: 1px solid black;
             padding: 5px;
         }
@@ -25,16 +30,19 @@
         }
         .numero {
             text-align: right;
+            width: 50px;
         }
     </style>
 </head>
 <body>
     <h1 style="text-align: center;">Uso de Tabelas Grandes</h1>
     <table>
+        <caption>População por Unidade Federativa
+        </caption>
         <thead>
             <tr>            
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -149,7 +157,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td><strong>População Total</strong></td>
+                <th scope="row">População Total</th>
                 <td class="numero"><strong>215.012.785</strong></td>
             </tr>
         </tfoot>
