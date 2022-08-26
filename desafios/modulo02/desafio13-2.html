@@ -24,16 +24,16 @@
             border: 1px solid black;
             padding: 3px;
         }
-        .nota {
-            text-align: center;
-        }
         .media {
             text-align: left;
         }
         .area {
-            text-align: center;
-            font-weight: bold;
+            background-color: white;
+            color: black;
             padding: 8px;
+        }
+        .nota {
+           text-align: center;
         }
     </style>
 </head>
@@ -41,10 +41,10 @@
     <table>
         <thead>
             <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
+                <th rowspan="2" scope="row">Área</th>
+                <th rowspan="2" scope="row">Disciplinas</th>
+                <th colspan="2" scope="rowgroup">Notas</th>
+                <th rowspan="2" scope="row">Média</th>
             </tr>
             <tr>
                 <th>Nota 1</th>
@@ -53,7 +53,7 @@
         </thead>
         <tbody>
             <tr>
-                <td rowspan="4" class="area">Exatas</td>
+                <th rowspan="4" class="area" scope="colgroup">Exatas</th>
                 <td>Matemática</td>
                 <td class="nota">0.0</td>
                 <td class="nota">0.0</td>
@@ -78,11 +78,11 @@
                 <td class="nota">0.0</td>
             </tr>
             <tr>
-                <th colspan="4" class="media">Média de Exatas</th>
+                <th colspan="4" class="media" scope="col">Média de Exatas</th>
                 <th class="nota">0.0</th>
             </tr>
             <tr>
-                <td rowspan="2" class="area">Humanas</td>
+                <th rowspan="2" class="area" scope="colgroup">Humanas</th>
                 <td>História</td>
                 <td class="nota">0.0</td>
                 <td class="nota">0.0</td>
@@ -95,7 +95,7 @@
                 <td class="nota">0.0</td>
             </tr>
             <tr>
-                <th colspan="4" class="media">Média de Humanas</th>
+                <th colspan="4" class="media" scope="col">Média de Humanas</th>
                 <th class="nota">0.0</th>
             </tr>
         </tbody>
