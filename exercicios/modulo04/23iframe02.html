@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Iframes</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        iframe {
+            width: 95vw;
+            height: 400px;
+            display: block;
+            margin: auto;
+        }
+        a {
+            display: block;
+            background-color: blueviolet;
+            color: white;
+            font-weight: bold;
+            padding: 5px;
+            border-radius: 50px;
+            margin: 10px 5px;
+            text-decoration: none;
+            cursor: pointer;
+            width: 130px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Abrindo Links Dentro De Ifrmes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis nobis temporibus suscipit deleniti quas iusto, nihil architecto ipsum mollitia? Dicta blanditiis, repellat totam beatae exercitationem ut sit. Cum, quam nulla.</p>
+    <ul>
+        <li><a href="https://paulojr013.github.io/site-android/" target="frame">Projeto Android</a></li>
+        <li><a href="https://paulojr013.github.io/html-css/desafios/modulo03/projeto-cordel/" target="frame">Projeto Cordel</a></li>
+    </ul>
+
+    <iframe src="" frameborder="1" name="frame">
+        <p style="color: red; font-weight: bolder;">!!!SEU NAVEGADOR NÃO É COMPATÍVEL COM O IFRAME!!!</p>
+    </iframe>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis nobis temporibus suscipit deleniti quas iusto, nihil architecto ipsum mollitia? Dicta blanditiis, repellat totam beatae exercitationem ut sit. Cum, quam nulla.</p>
+</body>
+</html>
