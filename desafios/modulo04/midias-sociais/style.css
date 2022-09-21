@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+* {    
+    margin: 0px;
+}
+body {
+    height: 100vh;
+    background: black url(imagens/fundo-madeira.jpg) top center no-repeat fixed;
+    background-size: cover;
+}
+
+/* #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+section.celular {
+    background: url(imagens/frame-iphone.png) center center no-repeat fixed;
+    height: 700px;
+}
+iframe.tela {
+    width: 267px;
+    height: 470px;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* botões */
+
+.home {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url(imagens/logo-home.jpg);
+    background-size: cover;
+}
+.youtube {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url(imagens/logo-youtube.jpg);
+    background-size: cover;
+}
+.whatsapp {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url(imagens/logo-github.jpg);
+    background-size: cover;
+}
+.instagram {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url(imagens/logo-instagram.jpg);
+    background-size: cover;
+}
+.twitter {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url(imagens/logo-twitter.jpg);
+    background-size: cover;
+}
+.facebook {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url(imagens/logo-facebook.jpg);
+    background-size: cover;
+}
+/* .botoes > button:hover {
+    cursor: pointer;
+} */
