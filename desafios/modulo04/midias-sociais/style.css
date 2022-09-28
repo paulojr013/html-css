@@ -9,17 +9,21 @@ body {
     background-size: cover;
 }
 
-/* #container {
+#container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    /* column-gap: 100px; */
+}
 
 section.celular {
     background: url(imagens/frame-iphone.png) center center no-repeat fixed;
-    height: 700px;
+    height: 100vh;
+    width: 400px;
+    margin: auto;
 }
-iframe.tela {
+div.tela {
     width: 267px;
     height: 470px;
     display: block;
@@ -30,50 +34,40 @@ iframe.tela {
     transform: translate(-50%, -50%);
 }
 
+section.botoes {
+    width: 60px;
+}
 /* botões */
-
-.home {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-image: url(imagens/logo-home.jpg);
+.todo-botao {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;    
     background-size: cover;
+    cursor: pointer;
+    margin-top: 15px;
+    border: 0px solid black;
+    box-shadow: 0px 1px 4px black;
+}
+.todo-botao:hover {
+    transform: translate(-3px, -3px);
+    transition: 0.5s;
+    border: 1px solid white;
+}
+.home {    
+    background-image: url(imagens/logo-home.jpg);    
 }
 .youtube {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
     background-image: url(imagens/logo-youtube.jpg);
-    background-size: cover;
 }
 .whatsapp {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
     background-image: url(imagens/logo-github.jpg);
-    background-size: cover;
 }
 .instagram {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-image: url(imagens/logo-instagram.jpg);
-    background-size: cover;
+    background-image: url(imagens/logo-instagram.jpg);    
 }
 .twitter {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
     background-image: url(imagens/logo-twitter.jpg);
-    background-size: cover;
 }
 .facebook {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-image: url(imagens/logo-facebook.jpg);
-    background-size: cover;
+   background-image: url(imagens/logo-facebook.jpg);
 }
-/* .botoes > button:hover {
-    cursor: pointer;
-} */
