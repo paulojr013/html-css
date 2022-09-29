@@ -9,12 +9,11 @@ body {
     background-size: cover;
 }
 
-#container {
+main#container-principal {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
     align-items: flex-start;
-    /* column-gap: 100px; */
 }
 
 section.celular {
@@ -34,21 +33,23 @@ div.tela {
     transform: translate(-50%, -50%);
 }
 
-section.botoes {
-    width: 60px;
+section.redes-sociais {
+    width: 70px;
+    height: 405px;
+    padding-top: 15px;
 }
-/* botões */
-.todo-botao {
+.botao {
+    display: block;
     width: 50px;
     height: 50px;
     border-radius: 50%;    
     background-size: cover;
     cursor: pointer;
-    margin-top: 15px;
+    /* margin: 15px 10px 15px 0px; */
     border: 0px solid black;
     box-shadow: 0px 1px 4px black;
 }
-.todo-botao:hover {
+.botao:hover {
     transform: translate(-3px, -3px);
     transition: 0.5s;
     border: 1px solid white;
