@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - 07</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário com:</h1>
+    <h3>SELECT - DATALIST - TEXTAREA</h3>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iestado">Estado:</label>
+                <select name="estado" id="iestado" required>
+                    <option value="" selected style="text-align:center;">----- Selecione -----</option>
+                <optgroup label="Região Sudeste">
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+                </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option >Professor</option>
+                <option >Desenvolvedor</option>
+                <option >Vendedor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" maxlength="100"></textarea>
+            <!-- Podemos usar o atributo  style="resize: none" para evitar que o usuário altere o tamanho do textarea -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
