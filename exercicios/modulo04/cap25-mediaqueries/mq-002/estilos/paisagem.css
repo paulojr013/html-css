@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /* Dispositivo em pé (portrait) */
+
+body {
+    background: url(../imagens/cev-landscape.jpg) center left no-repeat fixed;
+    background-size: cover;
+}

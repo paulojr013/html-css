@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /* Dispositivo deitado (landscape) */
+
+body {
+    background: url(../imagens/cev-portrait.jpg) center bottom no-repeat fixed;
+    background-size: cover;
+}
