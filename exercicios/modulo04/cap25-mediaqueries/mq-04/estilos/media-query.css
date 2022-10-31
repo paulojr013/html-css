@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/* Versão para demais midias */
+
+/* Typical Device Breakpoints 2020
+------------------------------
+Pequenas telas: até 600px;
+Celular: 360px;
+Tablet: 768px;
+notebook / pequenos monitores: 1200px;
+Grandes telas: acima de 1920px.
+*/
+
+@media print {
+    * {        
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url(../imagens/back-print.jpg); /*Desnessário*/
+    }        
+    main { 
+        border: 2px solid black;
+        width: 90%;
+    }
+    main h1 {        
+        text-shadow: none;
+        color: black;
+    }
+    main::after {
+        content: 'Essa impressão foi feita através do site cursoemvideo.com';
+    }
+    #phone { display: none; }
+    #tablet { display: nne; }
+    #print { display: block; }
+    #pc { display: none; }
+    #tv { display: none; }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) /*Tablet*/ {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }        
+    #phone { display: none; }
+    #tablet { display: block; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: none; }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) /*Desktop*/ {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }        
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: block; }
+    #tv { display: none; }
+    
+    main {
+        width: 500px;
+    }
+}
+@media screen and (min-width: 1200px) /*Grandes telas*/ {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }        
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: block; }
+
+    main {
+        width: 700px;
+    }
+}
