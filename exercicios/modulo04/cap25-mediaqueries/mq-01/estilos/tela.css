@@ -21,20 +21,50 @@ header > h1 {
     text-align: center;
     padding: 30px;
 }
+#burguer {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+#burguer:hover {
+    background-color: white;
+    color:  rgb(32, 32, 32);
+}
+menu {
+    display: none;
+}
 menu ul {
     list-style-type: none;
     text-align: center;
     background-color: rgb(179, 179, 179);
 }
-menu li {
-    display: inline-block;
-    padding: 10px;
-    background-color: rgb(48, 48, 48);
+menu>ul>li>a {
+    display: block;
+    text-decoration: none;
     color: white;
+    padding: 10px;
+    background-color: rgb(109, 109, 109);
+    color: white;
+    border-top: 2px solid rgba(150, 148, 148, 0.575);
 }
-article {
-    width: 600px;
+menu>ul>li>a:hover {
+    background-color: lightgray;
+}
+main {
+    width: 90%;
     padding: 20px;
-    margin: auto;
+    margin: 10px auto;
     background-color: white;
+    border-radius: 10px;
+}
+article > h2 {
+    padding-bottom: 20px;
+}
+article > p {
+    text-indent: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
 }
