@@ -68,3 +68,14 @@ article > p {
     text-align: justify;
     margin-bottom: 10px;
 }
+@media scrren and (min-width: 768px) {
+    #burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu>ul>li>a {
+        display: inline-block;
+    }
+}
